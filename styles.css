@@ -8,11 +8,60 @@ DARK BLUE: #1D3557
 
 */
 
-body {
-    margin: 0;
-    text-align: center;
+:root {
+    --light-blue: #457B9D;
+    --dark-blue: #1D3557;
 }
 
-img {
+*, ::before, ::after { box-sizing: border-box; }
+
+body {
+    margin: 0 auto;
+    text-align: center;
+
+    width: 720px;
+}
+
+#activities img {
     width: 100px;
+    border-radius: 50%;
+}
+
+#hero {
+    background-image: url(images/torshov.jpg);
+    background-size: cover;
+    height: 343px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: 'Arial';
+}
+
+#hero h1 {
+    background: var(--dark-blue);
+    border-radius: 10px;
+    width: 225px;
+    /* I should probably use padding instead of height */
+    height: 42px;
+    margin-top: 0;
+    margin-bottom: 11px;
+
+    font-size: 32px;
+    line-height: 42px;
+}
+
+#hero h2 {
+    background: var(--light-blue);
+    border-radius: 10px;
+    width: 412px;
+    height: 52px;
+    margin: 0;
+    padding: 4px 0;
+
+    font-size: 18.72px;
+    line-height: 22px;
 }
